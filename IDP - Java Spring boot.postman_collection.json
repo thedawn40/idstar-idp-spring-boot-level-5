@@ -1,0 +1,1668 @@
+{
+	"info": {
+		"_postman_id": "1bfacfc1-3972-4799-9a47-011b0f0333f8",
+		"name": "IDP - Java Spring boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4193127",
+		"_collection_link": "https://planetary-astronaut-534455.postman.co/workspace/idstar~432dbe5b-4622-4583-90df-8d935915204f/collection/4193127-1bfacfc1-3972-4799-9a47-011b0f0333f8?action=share&source=collection_link&creator=4193127"
+	},
+	"item": [
+		{
+			"name": "Level 4",
+			"item": [
+				{
+					"name": "karyawan",
+					"item": [
+						{
+							"name": "1. Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"syarini\",\r\n    \"dob\": \"1996-01-01\",\r\n    \"status\": \"active\",\r\n    \"alamat\": \"jakarta\",\r\n    \"detailKaryawan\": {\r\n        \"nik\": \"123455\",\r\n        \"npwp\": \"12345677\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/karyawan/save",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"karyawan",
+										"save"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nama\": \"syarini\",\r\n    \"dob\": \"1996-01-01\",\r\n    \"status\": \"active\",\r\n    \"alamat\": \"jakarta\",\r\n    \"detailKaryawan\": {\r\n        \"nik\": \"123455\",\r\n        \"npwp\": \"12345677\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/karyawan/save",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"karyawan",
+												"save"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 16 Jun 2024 10:38:27 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 6,\n        \"nama\": \"syarini\",\n        \"createdDate\": \"2024-06-16T17:38:27.0155195\",\n        \"updatedDate\": \"2024-06-16T17:38:27.0155195\",\n        \"deletedDate\": null,\n        \"status\": \"active\",\n        \"alamat\": \"jakarta\",\n        \"detailKaryawan\": {\n            \"id\": 6,\n            \"createdDate\": \"2024-06-16T17:38:27.0155195\",\n            \"updatedDate\": \"2024-06-16T17:38:27.0165198\",\n            \"deletedDate\": null,\n            \"nik\": \"123455\",\n            \"npwp\": \"12345677\"\n        },\n        \"dob\": \"1996-01-01\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "2. Update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 6,\r\n    \"nama\": \"syarini ubah\",\r\n    \"dob\": \"1996-01-01\",\r\n    \"status\": \"active\",\r\n    \"alamat\": \"jakarta\",\r\n    \"detailKaryawan\": {\r\n        \"id\": 6,\r\n        \"nik\": \"123455890\",\r\n        \"npwp\": \"12345677789\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/karyawan/update",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"karyawan",
+										"update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 6,\r\n    \"nama\": \"syarini ubah\",\r\n    \"dob\": \"1996-01-01\",\r\n    \"status\": \"active\",\r\n    \"alamat\": \"jakarta\",\r\n    \"detailKaryawan\": {\r\n        \"id\": 6,\r\n        \"nik\": \"123455890\",\r\n        \"npwp\": \"12345677789\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/karyawan/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"karyawan",
+												"update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 16 Jun 2024 10:43:55 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 6,\n        \"nama\": \"syarini\",\n        \"createdDate\": \"2024-06-16T17:38:27.01552\",\n        \"updatedDate\": \"2024-06-16T17:38:27.01552\",\n        \"deletedDate\": null,\n        \"status\": \"active\",\n        \"alamat\": \"jakarta\",\n        \"detailKaryawan\": {\n            \"id\": 6,\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n            \"deletedDate\": null,\n            \"nik\": \"123455\",\n            \"npwp\": \"12345677\"\n        },\n        \"dob\": \"1996-01-01\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "3. Get All",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "page",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/karyawan/list",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"karyawan",
+										"list"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "page",
+													"value": "0",
+													"type": "text"
+												},
+												{
+													"key": "size",
+													"value": "10",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/karyawan/list",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"karyawan",
+												"list"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 16 Jun 2024 10:45:20 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": [\n        {\n            \"id\": 6,\n            \"nama\": \"syarini\",\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:38:27.01552\",\n            \"deletedDate\": null,\n            \"status\": \"active\",\n            \"alamat\": \"jakarta\",\n            \"detailKaryawan\": {\n                \"id\": 6,\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                \"deletedDate\": null,\n                \"nik\": \"123455\",\n                \"npwp\": \"12345677\"\n            },\n            \"dob\": \"1996-01-01\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "4. Find by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/v1/idstar/karyawan/1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"karyawan",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/v1/idstar/karyawan/6",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"karyawan",
+												"6"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 16 Jun 2024 10:47:54 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 6,\n        \"nama\": \"syarini\",\n        \"createdDate\": \"2024-06-16T17:38:27.01552\",\n        \"updatedDate\": \"2024-06-16T17:38:27.01552\",\n        \"deletedDate\": null,\n        \"status\": \"active\",\n        \"alamat\": \"jakarta\",\n        \"detailKaryawan\": {\n            \"id\": 6,\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n            \"deletedDate\": null,\n            \"nik\": \"123455\",\n            \"npwp\": \"12345677\"\n        },\n        \"dob\": \"1996-01-01\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "5. Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/karyawan/delete",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"karyawan",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "training",
+					"item": [
+						{
+							"name": "1. Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tema\": \"JAVA DEVELOPER\",\r\n    \"pengajar\": \"RIKI ALDI PARI\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/training/save",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"training",
+										"save"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"tema\": \"JAVA DEVELOPER\",\r\n    \"pengajar\": \"RIKI ALDI PARI\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/training/save",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"training",
+												"save"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 16 Jun 2024 13:18:59 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"nama\": null,\n        \"createdDate\": \"2024-06-16T20:18:58.8242975\",\n        \"updatedDate\": \"2024-06-16T20:18:58.8242975\",\n        \"deletedDate\": null,\n        \"pengajar\": \"RIKI ALDI PARI\",\n        \"tema\": \"JAVA DEVELOPER\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "2. Update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"1\",\r\n    \"tema\": \"JAVA DEVELOPER Update\",\r\n    \"pengajar\": \"RIKI ALDI PARI\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/training/update",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"training",
+										"update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": \"1\",\r\n    \"tema\": \"JAVA DEVELOPER Update\",\r\n    \"pengajar\": \"RIKI ALDI PARI\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/training/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"training",
+												"update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 16 Jun 2024 13:33:22 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"nama\": null,\n        \"createdDate\": \"2024-06-16T20:18:58.824298\",\n        \"updatedDate\": \"2024-06-16T20:33:21.7859308\",\n        \"deletedDate\": null,\n        \"pengajar\": \"RIKI ALDI PARI\",\n        \"tema\": \"JAVA DEVELOPER Update\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "3. Get All",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "page",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/training/list",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"training",
+										"list"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "page",
+													"value": "0",
+													"type": "text"
+												},
+												{
+													"key": "size",
+													"value": "10",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/training/list",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"training",
+												"list"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 16 Jun 2024 13:36:17 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"createdDate\": \"2024-06-16T20:18:58.824298\",\n            \"updatedDate\": \"2024-06-16T20:33:21.785931\",\n            \"deletedDate\": null,\n            \"pengajar\": \"RIKI ALDI PARI\",\n            \"tema\": \"JAVA DEVELOPER Update\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "4. Find by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/v1/idstar/training/1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"training",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/v1/idstar/training/1",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"training",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 16 Jun 2024 13:38:29 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"createdDate\": \"2024-06-16T20:18:58.824298\",\n        \"updatedDate\": \"2024-06-16T20:33:21.785931\",\n        \"deletedDate\": null,\n        \"pengajar\": \"RIKI ALDI PARI\",\n        \"tema\": \"JAVA DEVELOPER Update\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "5. Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/training/delete",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"training",
+										"delete"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/training/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"training",
+												"delete"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 16 Jun 2024 13:41:24 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": \"success\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "karyawan training",
+					"item": [
+						{
+							"name": "1. Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"karyawan\": {\r\n        \"id\": 6\r\n    },\r\n    \"training\": {\r\n        \"id\": 1\r\n    },\r\n    \"tanggal\": \"2023-01-01 13:00:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/karyawan-training/save",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"karyawan-training",
+										"save"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"karyawan\": {\r\n        \"id\": 6\r\n    },\r\n    \"training\": {\r\n        \"id\": 1\r\n    },\r\n    \"tanggal\": \"2023-01-01 13:00:00\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/karyawan-training/save",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"karyawan-training",
+												"save"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 16 Jun 2024 14:30:04 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"createdDate\": \"2024-06-16T21:30:02.5041275\",\n        \"updatedDate\": \"2024-06-16T21:30:02.5051232\",\n        \"deletedDate\": null,\n        \"tanggal\": \"2023-01-01 13:00:00\",\n        \"karyawan\": {\n            \"id\": 6,\n            \"nama\": \"syarini\",\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:48:56.343986\",\n            \"deletedDate\": \"2024-06-16T17:48:56.322973\",\n            \"status\": \"inactive\",\n            \"alamat\": \"jakarta\",\n            \"detailKaryawan\": {\n                \"id\": 6,\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                \"deletedDate\": null,\n                \"nik\": \"123455\",\n                \"npwp\": \"12345677\"\n            },\n            \"dob\": \"1996-01-01\"\n        },\n        \"training\": {\n            \"id\": 1,\n            \"createdDate\": \"2024-06-16T20:18:58.824298\",\n            \"updatedDate\": \"2024-06-16T20:41:24.740446\",\n            \"deletedDate\": \"2024-06-16T20:41:24.223441\",\n            \"pengajar\": \"RIKI ALDI PARI\",\n            \"tema\": \"JAVA DEVELOPER Update\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "2. Update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"karyawan\": {\r\n        \"id\": \"1\"\r\n    },\r\n    \"training\": {\r\n        \"id\": \"1\"\r\n    },\r\n    \"tanggal\": \"2023-01-01 13:00:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/karyawan-training/update",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"karyawan-training",
+										"update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 1,\r\n    \"karyawan\": {\r\n        \"id\": 6\r\n    },\r\n    \"training\": {\r\n        \"id\": 1\r\n    },\r\n    \"tanggal\": \"2023-01-01 14:00:00\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/karyawan-training/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"karyawan-training",
+												"update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jun 2024 11:55:58 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"createdDate\": \"2024-06-16T21:30:02.504128\",\n        \"updatedDate\": \"2024-06-17T18:55:58.3196681\",\n        \"deletedDate\": null,\n        \"tanggal\": \"2023-01-01 14:00:00\",\n        \"karyawan\": {\n            \"id\": 6,\n            \"nama\": \"syarini\",\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:48:56.343986\",\n            \"deletedDate\": \"2024-06-16T17:48:56.322973\",\n            \"status\": \"inactive\",\n            \"alamat\": \"jakarta\",\n            \"detailKaryawan\": {\n                \"id\": 6,\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                \"deletedDate\": null,\n                \"nik\": \"123455\",\n                \"npwp\": \"12345677\"\n            },\n            \"dob\": \"1996-01-01\"\n        },\n        \"training\": {\n            \"id\": 1,\n            \"createdDate\": \"2024-06-16T20:18:58.824298\",\n            \"updatedDate\": \"2024-06-16T20:41:24.740446\",\n            \"deletedDate\": \"2024-06-16T20:41:24.223441\",\n            \"pengajar\": \"RIKI ALDI PARI\",\n            \"tema\": \"JAVA DEVELOPER Update\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "3. Get All",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "page",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/karyawan-training/list",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"karyawan-training",
+										"list"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "page",
+													"value": "0",
+													"type": "text"
+												},
+												{
+													"key": "size",
+													"value": "10",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/karyawan-training/list",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"karyawan-training",
+												"list"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jun 2024 11:57:45 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"createdDate\": \"2024-06-16T21:30:02.504128\",\n            \"updatedDate\": \"2024-06-17T18:55:58.319668\",\n            \"deletedDate\": null,\n            \"tanggal\": \"2023-01-01 14:00:00\",\n            \"karyawan\": {\n                \"id\": 6,\n                \"nama\": \"syarini\",\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:48:56.343986\",\n                \"deletedDate\": \"2024-06-16T17:48:56.322973\",\n                \"status\": \"inactive\",\n                \"alamat\": \"jakarta\",\n                \"detailKaryawan\": {\n                    \"id\": 6,\n                    \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                    \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                    \"deletedDate\": null,\n                    \"nik\": \"123455\",\n                    \"npwp\": \"12345677\"\n                },\n                \"dob\": \"1996-01-01\"\n            },\n            \"training\": {\n                \"id\": 1,\n                \"createdDate\": \"2024-06-16T20:18:58.824298\",\n                \"updatedDate\": \"2024-06-16T20:41:24.740446\",\n                \"deletedDate\": \"2024-06-16T20:41:24.223441\",\n                \"pengajar\": \"RIKI ALDI PARI\",\n                \"tema\": \"JAVA DEVELOPER Update\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "4. Find by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/v1/idstar/karyawan-training/1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"karyawan-training",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/v1/idstar/karyawan-training/1",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"karyawan-training",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jun 2024 11:59:52 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"createdDate\": \"2024-06-16T21:30:02.504128\",\n        \"updatedDate\": \"2024-06-17T18:55:58.319668\",\n        \"deletedDate\": null,\n        \"tanggal\": \"2023-01-01 14:00:00\",\n        \"karyawan\": {\n            \"id\": 6,\n            \"nama\": \"syarini\",\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:48:56.343986\",\n            \"deletedDate\": \"2024-06-16T17:48:56.322973\",\n            \"status\": \"inactive\",\n            \"alamat\": \"jakarta\",\n            \"detailKaryawan\": {\n                \"id\": 6,\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                \"deletedDate\": null,\n                \"nik\": \"123455\",\n                \"npwp\": \"12345677\"\n            },\n            \"dob\": \"1996-01-01\"\n        },\n        \"training\": {\n            \"id\": 1,\n            \"createdDate\": \"2024-06-16T20:18:58.824298\",\n            \"updatedDate\": \"2024-06-16T20:41:24.740446\",\n            \"deletedDate\": \"2024-06-16T20:41:24.223441\",\n            \"pengajar\": \"RIKI ALDI PARI\",\n            \"tema\": \"JAVA DEVELOPER Update\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "5. Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/karyawan-training/delete",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"karyawan-training",
+										"delete"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/karyawan-training/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"karyawan-training",
+												"delete"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jun 2024 12:01:22 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"createdDate\": \"2024-06-16T21:30:02.504128\",\n        \"updatedDate\": \"2024-06-17T19:01:22.0793377\",\n        \"deletedDate\": \"2024-06-17T19:01:22.0445704\",\n        \"tanggal\": \"2023-01-01 14:00:00\",\n        \"karyawan\": {\n            \"id\": 6,\n            \"nama\": \"syarini\",\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:48:56.343986\",\n            \"deletedDate\": \"2024-06-16T17:48:56.322973\",\n            \"status\": \"inactive\",\n            \"alamat\": \"jakarta\",\n            \"detailKaryawan\": {\n                \"id\": 6,\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                \"deletedDate\": null,\n                \"nik\": \"123455\",\n                \"npwp\": \"12345677\"\n            },\n            \"dob\": \"1996-01-01\"\n        },\n        \"training\": {\n            \"id\": 1,\n            \"createdDate\": \"2024-06-16T20:18:58.824298\",\n            \"updatedDate\": \"2024-06-16T20:41:24.740446\",\n            \"deletedDate\": \"2024-06-16T20:41:24.223441\",\n            \"pengajar\": \"RIKI ALDI PARI\",\n            \"tema\": \"JAVA DEVELOPER Update\"\n        }\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "rekening",
+					"item": [
+						{
+							"name": "1. Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama\": \"Riki Aldi Pari\",\r\n    \"jenis\": \"BCA\",\r\n    \"rekening\": \"12345678\",\r\n    \"alamat\": \"jakarta\",\r\n    \"karyawan\": {\r\n        \"id\": \"1\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/rekening/save",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"rekening",
+										"save"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"nama\": \"Syahrini\",\r\n    \"jenis\": \"BCA\",\r\n    \"rekening\": \"12345678\",\r\n    \"alamat\": \"jakarta\",\r\n    \"karyawan\": {\r\n        \"id\": \"6\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/rekening/save",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"rekening",
+												"save"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jun 2024 12:18:26 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"createdDate\": \"2024-06-17T19:18:25.3677422\",\n        \"deletedDate\": null,\n        \"updatedDate\": \"2024-06-17T19:18:25.3699188\",\n        \"jenis\": \"BCA\",\n        \"nama\": \"Syahrini\",\n        \"rekening\": \"12345678\",\n        \"karyawan\": {\n            \"id\": 6,\n            \"nama\": \"syarini\",\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:48:56.343986\",\n            \"deletedDate\": \"2024-06-16T17:48:56.322973\",\n            \"status\": \"inactive\",\n            \"alamat\": \"jakarta\",\n            \"detailKaryawan\": {\n                \"id\": 6,\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                \"deletedDate\": null,\n                \"nik\": \"123455\",\n                \"npwp\": \"12345677\"\n            },\n            \"dob\": \"1996-01-01\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "2. Update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"1\",\r\n    \"nama\": \"Riki Aldi Pari\",\r\n    \"jenis\": \"BCA\",\r\n    \"rekening\": \"12345678\",\r\n    \"alamat\": \"jakarta\",\r\n    \"karyawan\": {\r\n        \"id\": \"1\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/rekening/update",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"rekening",
+										"update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": \"1\",\r\n    \"nama\": \"Syahrini update\",\r\n    \"jenis\": \"BCA\",\r\n    \"rekening\": \"12345678\",\r\n    \"alamat\": \"jakarta\",\r\n    \"karyawan\": {\r\n        \"id\": 6\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/rekening/update",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"rekening",
+												"update"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jun 2024 12:21:53 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"createdDate\": \"2024-06-17T19:18:25.367742\",\n        \"deletedDate\": null,\n        \"updatedDate\": \"2024-06-17T19:21:53.5896002\",\n        \"jenis\": \"BCA\",\n        \"nama\": \"Syahrini update\",\n        \"rekening\": \"12345678\",\n        \"karyawan\": {\n            \"id\": 6,\n            \"nama\": \"syarini\",\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:48:56.343986\",\n            \"deletedDate\": \"2024-06-16T17:48:56.322973\",\n            \"status\": \"inactive\",\n            \"alamat\": \"jakarta\",\n            \"detailKaryawan\": {\n                \"id\": 6,\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                \"deletedDate\": null,\n                \"nik\": \"123455\",\n                \"npwp\": \"12345677\"\n            },\n            \"dob\": \"1996-01-01\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "3. Get All",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "page",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/rekening/list",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"rekening",
+										"list"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "page",
+													"value": "0",
+													"type": "text"
+												},
+												{
+													"key": "size",
+													"value": "10",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/rekening/list",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"rekening",
+												"list"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jun 2024 12:25:09 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"createdDate\": \"2024-06-17T19:18:25.367742\",\n            \"deletedDate\": null,\n            \"updatedDate\": \"2024-06-17T19:21:53.5896\",\n            \"jenis\": \"BCA\",\n            \"nama\": \"Syahrini update\",\n            \"rekening\": \"12345678\",\n            \"karyawan\": {\n                \"id\": 6,\n                \"nama\": \"syarini\",\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:48:56.343986\",\n                \"deletedDate\": \"2024-06-16T17:48:56.322973\",\n                \"status\": \"inactive\",\n                \"alamat\": \"jakarta\",\n                \"detailKaryawan\": {\n                    \"id\": 6,\n                    \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                    \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                    \"deletedDate\": null,\n                    \"nik\": \"123455\",\n                    \"npwp\": \"12345677\"\n                },\n                \"dob\": \"1996-01-01\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "4. Find by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/v1/idstar/rekening/1",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"rekening",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{host}}/v1/idstar/rekening/1",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"rekening",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jun 2024 12:29:00 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"createdDate\": \"2024-06-17T19:18:25.367742\",\n        \"deletedDate\": null,\n        \"updatedDate\": \"2024-06-17T19:21:53.5896\",\n        \"jenis\": \"BCA\",\n        \"nama\": \"Syahrini update\",\n        \"rekening\": \"12345678\",\n        \"karyawan\": {\n            \"id\": 6,\n            \"nama\": \"syarini\",\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:48:56.343986\",\n            \"deletedDate\": \"2024-06-16T17:48:56.322973\",\n            \"status\": \"inactive\",\n            \"alamat\": \"jakarta\",\n            \"detailKaryawan\": {\n                \"id\": 6,\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                \"deletedDate\": null,\n                \"nik\": \"123455\",\n                \"npwp\": \"12345677\"\n            },\n            \"dob\": \"1996-01-01\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "5. Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/v1/idstar/rekening/delete",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"v1",
+										"idstar",
+										"rekening",
+										"delete"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{host}}/v1/idstar/rekening/delete",
+											"host": [
+												"{{host}}"
+											],
+											"path": [
+												"v1",
+												"idstar",
+												"rekening",
+												"delete"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jun 2024 12:31:51 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 200,\n    \"message\": \"Success\",\n    \"status\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"createdDate\": \"2024-06-17T19:18:25.367742\",\n        \"deletedDate\": \"2024-06-17T19:31:50.6542161\",\n        \"updatedDate\": \"2024-06-17T19:31:50.7570163\",\n        \"jenis\": \"BCA\",\n        \"nama\": \"Syahrini update\",\n        \"rekening\": \"12345678\",\n        \"karyawan\": {\n            \"id\": 6,\n            \"nama\": \"syarini\",\n            \"createdDate\": \"2024-06-16T17:38:27.01552\",\n            \"updatedDate\": \"2024-06-16T17:48:56.343986\",\n            \"deletedDate\": \"2024-06-16T17:48:56.322973\",\n            \"status\": \"inactive\",\n            \"alamat\": \"jakarta\",\n            \"detailKaryawan\": {\n                \"id\": 6,\n                \"createdDate\": \"2024-06-16T17:38:27.01552\",\n                \"updatedDate\": \"2024-06-16T17:38:27.01652\",\n                \"deletedDate\": null,\n                \"nik\": \"123455\",\n                \"npwp\": \"12345677\"\n            },\n            \"dob\": \"1996-01-01\"\n        }\n    }\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
